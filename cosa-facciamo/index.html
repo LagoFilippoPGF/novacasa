@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosa facciamo – NovaCasa</title>
+  <meta name="description" content="Cosa facciamo: gestione pratiche immobiliare digitale, processi e sedi fisiche. Metodo in 4 step." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <div class="brand brand-logo" onclick="window.location.href='../'" aria-label="Home">
+      <img src="../assets/logonovacasa.png" alt="NovaCasa" class="logo" />
+    </div>
+
+    <div class="nav-links" aria-label="Menu">
+      <a href="../servizi/">Servizi</a>
+      <a href="../cosa-facciamo/">Cosa facciamo</a>
+      <a href="../consulenti/">Consulenti</a>
+      <a href="../dicono-di-noi/">Dicono di noi</a>
+      <a href="../contatti/">Contatti</a>
+    </div>
+
+    <div class="nav-cta">
+      <button class="btn btn-outline" onclick="openWhatsApp('Ciao NovaCasa, vorrei informazioni e fissare un appuntamento. Il mio caso:')">Scrivi a un consulente</button>
+      <button class="btn btn-gold" onclick="openWhatsApp('Ciao NovaCasa, voglio una valutazione gratuita e senza impegno del mio immobile. Zona e tipologia:')">Valutazione gratuita</button>
+    </div>
+
+    <button class="burger" aria-label="Apri menu" onclick="toggleMobile()">☰</button>
+  </div>
+
+  <div class="mobile" id="mobile">
+    <a href="../servizi/" onclick="toggleMobile()">Servizi</a>
+    <a href="../cosa-facciamo/" onclick="toggleMobile()">Cosa facciamo</a>
+    <a href="../consulenti/" onclick="toggleMobile()">Consulenti</a>
+    <a href="../dicono-di-noi/" onclick="toggleMobile()">Dicono di noi</a>
+    <a href="../contatti/" onclick="toggleMobile()">Contatti</a>
+    <div class="mcta">
+      <button class="btn btn-outline" onclick="openWhatsApp('Ciao NovaCasa, vorrei informazioni e fissare un appuntamento. Il mio caso:')">WhatsApp</button>
+      <button class="btn btn-gold" onclick="openCalendly()">Prenota meeting</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="anchor">
+    <div class="container">
+      <div class="label">Cosa facciamo</div>
+      <h2 class="title">Gestiamo la pratica, riduciamo gli imprevisti, aumentiamo la riuscita.</h2>
+      <p class="subtext">
+        NovaCasa non è “solo un’agenzia”. Siamo uno studio prop-tech: lavoriamo con <b>processi</b>, <b>check</b> e gestione documentale
+        per portarti alle firme con più controllo. Uniamo una forte presenza digitale con <b>sedi fisiche</b>:
+        comodità online, solidità nella realtà.
+      </p>
+
+      <div class="two">
+        <div class="box">
+          <h3>Consulenza prima di tutto</h3>
+          <ul class="list">
+            <li><b>Partiamo da una call</b>: obiettivo, tempistiche, vincoli e priorità.</li>
+            <li><b>Ti diciamo cosa conviene</b> (e perché): percorso consigliato e criticità da gestire.</li>
+            <li><b>Pacchetti diversi</b>: scegli la soluzione più adatta, non una proposta “standard”.</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Digitale, ma con persone operative</h3>
+          <ul class="list">
+            <li><b>Documenti in ordine</b>: checklist, raccolta, verifica e sintesi.</li>
+            <li><b>Trasparenza</b>: sai sempre cosa manca, cosa è ok e cosa va risolto.</li>
+            <li><b>Regia</b>: quando serve coordiniamo tecnici/notai per chiudere bene.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" style="margin-top:18px;">
+        <h3>Il metodo NovaCasa: 4 step, zero improvvisazione</h3>
+        <p style="color:var(--muted); line-height:1.75; margin-top:8px;">
+          Stesso processo, stessi controlli: meno sorprese e più controllo fino alle firme.
+        </p>
+
+        <div class="timeline" aria-label="Timeline del metodo NovaCasa">
+          <div class="t-step">
+            <div class="t-num">1</div>
+            <div class="t-card">
+              <b>Inquadramento</b>
+              <span>Obiettivi, tempi, vincoli. Definiamo il percorso.</span>
+            </div>
+          </div>
+
+          <div class="t-step">
+            <div class="t-num">2</div>
+            <div class="t-card">
+              <b>Raccolta documentale</b>
+              <span>Checklist chiara: niente caos, niente buchi.</span>
+            </div>
+          </div>
+
+          <div class="t-step">
+            <div class="t-num">3</div>
+            <div class="t-card">
+              <b>Verifica e sintesi</b>
+              <span>Report: cosa è ok, cosa manca, cosa fare.</span>
+            </div>
+          </div>
+
+          <div class="t-step">
+            <div class="t-num">4</div>
+            <div class="t-card">
+              <b>Controllo accordi</b>
+              <span>Proposta e preliminare verificati prima delle firme.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two" style="margin-top:18px;">
+        <div class="cta">
+          <h3>Capisci subito cosa conviene fare</h3>
+          <p style="margin-bottom:14px;">
+            In 20 minuti inquadriamo obiettivo, rischi e percorso migliore. Poi scegli come procedere.
+          </p>
+          <div class="actions">
+            <button class="btn btn-gold" onclick="openCalendly()">Prenota meeting</button>
+            <button class="btn btn-blue" onclick="openWhatsApp('Ciao NovaCasa, voglio una consulenza iniziale per capire il percorso migliore. Il mio caso:')">Scrivi su WhatsApp</button>
+          </div>
+          <p style="margin-top:12px; color:var(--muted2); font-size:.88rem; line-height:1.5;">
+            Prezzi e perimetro vengono definiti in call, in base a immobile e obiettivo.
+          </p>
+        </div>
+
+        <div class="box">
+          <h3>Perché è più rassicurante</h3>
+          <ul class="list">
+            <li><b>Prima i documenti</b>, poi la trattativa: riduciamo blocchi e sorprese.</li>
+            <li><b>Processo tracciabile</b>: sai sempre “a che punto siamo”.</li>
+            <li><b>Struttura reale</b>: digitale per velocità, sedi fisiche per solidità.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <b>NovaCasa</b><br/>
+      Prop-tech immobiliare<br/>
+      © <span id="year"></span>
+    </div>
+
+    <div>
+      <b>Contatti</b><br/>
+      WhatsApp / Tel: <a href="tel:+393409666810">340 966 6810</a><br/>
+      Email: <a href="mailto:inserisci@email.it">inserisci@email.it</a>
+    </div>
+
+    <div>
+      <b>Dati studio</b><br/>
+      P.IVA: __________<br/>
+      REA: __________<br/>
+      Indirizzo: __________
+    </div>
+  </div>
+</footer>
+
+<div class="float" onclick="openCalendly()" role="button" aria-label="Prenota meeting">
+  <div class="dot2"></div>
+  <div class="t">
+    <div class="a">Prenota meeting</div>
+    <div class="b">20 min · Calendly</div>
+  </div>
+</div>
+</body>
+</html>
