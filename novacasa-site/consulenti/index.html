@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulenti – NovaCasa</title>
+  <meta name="description" content="Consulenti NovaCasa: persone operative e risposte rapide su WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <div class="brand brand-logo" onclick="window.location.href='../'" aria-label="Home">
+      <img src="../assets/logonovacasa.png" alt="NovaCasa" class="logo" />
+    </div>
+
+    <div class="nav-links" aria-label="Menu">
+      <a href="../servizi/">Servizi</a>
+      <a href="../cosa-facciamo/">Cosa facciamo</a>
+      <a href="../consulenti/">Consulenti</a>
+      <a href="../dicono-di-noi/">Dicono di noi</a>
+      <a href="../contatti/">Contatti</a>
+    </div>
+
+    <div class="nav-cta">
+      <button class="btn btn-outline" onclick="openWhatsApp('Ciao NovaCasa, vorrei informazioni e fissare un appuntamento. Il mio caso:')">Scrivi a un consulente</button>
+      <button class="btn btn-gold" onclick="openWhatsApp('Ciao NovaCasa, voglio una valutazione gratuita e senza impegno del mio immobile. Zona e tipologia:')">Valutazione gratuita</button>
+    </div>
+
+    <button class="burger" aria-label="Apri menu" onclick="toggleMobile()">☰</button>
+  </div>
+
+  <div class="mobile" id="mobile">
+    <a href="../servizi/" onclick="toggleMobile()">Servizi</a>
+    <a href="../cosa-facciamo/" onclick="toggleMobile()">Cosa facciamo</a>
+    <a href="../consulenti/" onclick="toggleMobile()">Consulenti</a>
+    <a href="../dicono-di-noi/" onclick="toggleMobile()">Dicono di noi</a>
+    <a href="../contatti/" onclick="toggleMobile()">Contatti</a>
+    <div class="mcta">
+      <button class="btn btn-outline" onclick="openWhatsApp('Ciao NovaCasa, vorrei informazioni e fissare un appuntamento. Il mio caso:')">WhatsApp</button>
+      <button class="btn btn-gold" onclick="openCalendly()">Prenota meeting</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="anchor">
+    <div class="container">
+      <div class="label">Consulenti NovaCasa</div>
+      <h2 class="title">Persone operative. Risposte rapide.</h2>
+      <p class="subtext">Clicca su un consulente e scrivi direttamente su WhatsApp.</p>
+
+      <div class="team-grid">
+        <div class="agent" tabindex="0" role="button"
+             onclick="openWhatsApp('Ciao NovaCasa, vorrei parlare con Filippo (vendita + controllo documentale). Il mio immobile è...')"
+             onkeypress="if(event.key==='Enter'){openWhatsApp('Ciao NovaCasa, vorrei parlare con Filippo (vendita + controllo documentale). Il mio immobile è...')}">
+          <div class="agent-top">
+            <div class="avatar">FL</div>
+            <div>
+              <div class="agent-name">Filippo Lago</div>
+              <div class="agent-role">Vendita · Controllo documentale</div>
+            </div>
+          </div>
+          <div class="agent-bio">Imposta il percorso, mette ordine nei documenti e riduce i rischi che bloccano la vendita.</div>
+          <div class="chips">
+            <div class="mini"><strong>Pratiche:</strong> 312</div>
+            <div class="mini"><strong>Focus:</strong> venditori</div>
+            <div class="mini"><strong>Tempo medio:</strong> 3h</div>
+          </div>
+          <div class="agent-cta"><span>Scrivi su WhatsApp</span><span class="pill">Apri chat</span></div>
+        </div>
+
+        <div class="agent" tabindex="0" role="button"
+             onclick="openWhatsApp('Ciao NovaCasa, vorrei parlare con Riccardo (BIL). Zona e tempistiche:')"
+             onkeypress="if(event.key==='Enter'){openWhatsApp('Ciao NovaCasa, vorrei parlare con Riccardo (BIL). Zona e tempistiche:')}">
+          <div class="agent-top">
+            <div class="avatar">RP</div>
+            <div>
+              <div class="agent-name">Riccardo Pan</div>
+              <div class="agent-role">BIL · Coordinamento mercato</div>
+            </div>
+          </div>
+          <div class="agent-bio">Gestisce il percorso BIL: pre-market, market day e finestra offerte con regole chiare.</div>
+          <div class="chips">
+            <div class="mini"><strong>Pratiche:</strong> 198</div>
+            <div class="mini"><strong>Focus:</strong> BIL</div>
+            <div class="mini"><strong>Closing:</strong> 91%</div>
+          </div>
+          <div class="agent-cta"><span>Scrivi su WhatsApp</span><span class="pill">Apri chat</span></div>
+        </div>
+
+        <div class="agent" tabindex="0" role="button"
+             onclick="openWhatsApp('Ciao NovaCasa, vorrei parlare con Erik (patrimoni). Numero unità e città:')"
+             onkeypress="if(event.key==='Enter'){openWhatsApp('Ciao NovaCasa, vorrei parlare con Erik (patrimoni). Numero unità e città:')}">
+          <div class="agent-top">
+            <div class="avatar">EC</div>
+            <div>
+              <div class="agent-name">Erik Cimento</div>
+              <div class="agent-role">Patrimoni · Analisi & gestione</div>
+            </div>
+          </div>
+          <div class="agent-bio">Gestione a reddito con approccio tecnico: performance, manutenzioni, scadenze e reporting.</div>
+          <div class="chips">
+            <div class="mini"><strong>Unità:</strong> 146</div>
+            <div class="mini"><strong>Focus:</strong> rendita</div>
+            <div class="mini"><strong>Report:</strong> mensile</div>
+          </div>
+          <div class="agent-cta"><span>Scrivi su WhatsApp</span><span class="pill">Apri chat</span></div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;">
+        <button class="btn btn-blue" onclick="openWhatsApp('Ciao NovaCasa, voglio parlare con un consulente. Il mio caso:')">Scrivi ora su WhatsApp</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <b>NovaCasa</b><br/>
+      Prop-tech immobiliare<br/>
+      © <span id="year"></span>
+    </div>
+
+    <div>
+      <b>Contatti</b><br/>
+      WhatsApp / Tel: <a href="tel:+393409666810">340 966 6810</a><br/>
+      Email: <a href="mailto:inserisci@email.it">inserisci@email.it</a>
+    </div>
+
+    <div>
+      <b>Dati studio</b><br/>
+      P.IVA: __________<br/>
+      REA: __________<br/>
+      Indirizzo: __________
+    </div>
+  </div>
+</footer>
+
+<div class="float" onclick="openCalendly()" role="button" aria-label="Prenota meeting">
+  <div class="dot2"></div>
+  <div class="t">
+    <div class="a">Prenota meeting</div>
+    <div class="b">20 min · Calendly</div>
+  </div>
+</div>
+</body>
+</html>
