@@ -698,3 +698,8 @@ cursor: pointer;
 font-size: 1.8rem;
 }
 }
+
+.brand { display:flex; align-items:center; gap:10px; }
+.brand-logo { cursor:pointer; z-index: 999; position: relative; }
+.brand { text-decoration:none; color:inherit; }
+
