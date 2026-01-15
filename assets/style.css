@@ -680,3 +680,21 @@ footer{
   font-size:.96rem;
   display:block;
 }
+
+.brand-text{
+font-family: "Playfair Display", Georgia, serif;
+font-size: 1.6rem;
+font-weight: 700;
+letter-spacing: .02em;
+background: linear-gradient(135deg, var(--gold), var(--blue));
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+cursor: pointer;
+}
+
+@media (min-width: 992px){
+.brand-text{
+font-size: 1.8rem;
+}
+}
